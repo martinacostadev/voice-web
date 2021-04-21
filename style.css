@@ -1,0 +1,72 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.talk {
+  margin-top: 20px;
+  width: 200px;
+  height: 50px;
+  border: 0px;
+  border-radius: 5px;
+}
+
+.twitter {
+  margin-top: 20px;
+  text-decoration: none;
+  display: none;
+}
+
+.content {
+  margin-top: 20px;
+  display: flex;
+  width: 200px;
+  font-size: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-red-dot {
+  display: inline;
+  margin-top: 6px;
+}
+
+.text {
+  display: inline;
+}
+
+.red-dot {
+  display: inline-flex;
+  background: red;
+  border-radius: 50%;
+  margin: 10px;
+  height: 16px;
+  width: 16px;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+  transform: scale(1);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
